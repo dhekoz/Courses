@@ -1,0 +1,23 @@
+function rangeOfNumbers(startNum, endNum) {
+//  if (startNum > endNum){
+//    return [];
+//  } else {
+//    const numbers =  rangeOfNumbers(startNum, endNum -1);
+//    numbers.push(endNum);
+//    return numbers;
+//  }
+
+// return startNum > endNum
+// ? [] 
+// // : [startNum].concat(rangeOfNumbers(startNum + 1, endNum));
+// // or
+// : rangeOfNumbers(startNum, endNum - 1).concat(endNum);
+
+return startNum > endNum 
+? []
+// : [startNum, ...rangeOfNumbers(startNum + 1, endNum)]
+// or
+: [...rangeOfNumbers(startNum, endNum - 1), endNum];
+
+};
+console.log(rangeOfNumbers(1,5));
