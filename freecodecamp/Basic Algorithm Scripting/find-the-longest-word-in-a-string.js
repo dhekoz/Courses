@@ -46,5 +46,12 @@ function findLongestWordLength(s) {
     .reduce((longest, word) => Math.max(longest, word.length), 0);
 }
 
+OR
 
+function findLongestWordLength(str) {
+  return Math.max(...str.split(" ").map(word => word.length));
+}
+
+
+OR
 */
