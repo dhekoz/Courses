@@ -19,3 +19,6 @@ function largestOfFour(arr) {
 
   return results;
 }
+
+//OR
+
