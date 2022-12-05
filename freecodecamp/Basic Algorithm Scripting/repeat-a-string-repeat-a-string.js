@@ -26,3 +26,14 @@ function repeatStringNumTimes(string, times) {
 }
 repeatStringNumTimes("abc", 3);
 */
+
+//OR
+/*
+function repeatStringNumTimes(string, times) {
+  if (times > 0)
+    return string.repeat(times);
+  else
+    return "";
+}
+repeatStringNumTimes("abc", 3);
+*/
