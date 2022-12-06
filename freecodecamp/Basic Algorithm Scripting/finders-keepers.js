@@ -25,6 +25,21 @@ findElement([1, 2, 3, 4], (num) => num % 2 === 0);
 function findElement(arr, func) {
   return arr[arr.map(func).indexOf(true)];
 }
+
+code explanation:
+1. Look through the array given in the 1st paramater “arr” using the .map() method
+2. Use the function in the 2nd parameter as the callback function in arr.map()
+3. Acquire the index of the first number that meets the condition in the function.
+4. Use that index to display the first available number that meets the condition.
  */
 
-//  4th solution
+//  4th solution (** Recursive Solution**)
+/*
+function findElement(arr, func) {
+  if (arr.length > 0 && !func(arr[0])) {
+    return findElement(arr.slice(1), func);
+  } else {
+    return arr[0];
+  }
+}
+*/
