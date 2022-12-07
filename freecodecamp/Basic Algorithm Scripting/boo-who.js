@@ -3,3 +3,11 @@ function booWho(bool) {
 }
 
 booWho(null);
+
+/*
+Check if a value is classified as a boolean primitive. Return true or false.
+
+Boolean primitives are true and false.
+
+
+*/
