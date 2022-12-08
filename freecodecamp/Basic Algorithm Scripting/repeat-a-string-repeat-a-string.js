@@ -12,8 +12,6 @@ function repeatStringNumTimes(str, num) {
   return ulangiString;
 }
 
-repeatStringNumTimes("abc", 3);
-
 //OR
 /*
 function repeatStringNumTimes(string, times) {
