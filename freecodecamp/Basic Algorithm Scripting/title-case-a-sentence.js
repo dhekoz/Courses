@@ -23,4 +23,12 @@ function titleCase(str) {
     .join(" ");
 }
 titleCase("I'm a little tea pot");
+
+OR
+
+function titleCase(str) {
+  return str
+    .toLowerCase()
+    .replace(/(^|\s)\S/g, L => L.toUpperCase());
+}
 */
