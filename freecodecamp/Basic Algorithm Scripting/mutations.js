@@ -8,3 +8,25 @@ function mutation(arr) {
 }
 
 mutation(["hello", "hey"]);
+
+/* OR:
+function mutation(arr) {
+  return arr[1]
+    .toLowerCase()
+    .split("")
+    .every(function(letter) {
+      return arr[0].toLowerCase().indexOf(letter) !== -1;
+    });
+}
+
+OR:
+function mutation([ target, test ], i = 0) {
+  target = target.toLowerCase();
+  test = test.toLowerCase();
+  return i >= test.length
+    ? true
+    : !target.includes(test[i])
+      ? false
+      : mutation([ target, test ], i + 1);
+}
+*/
