@@ -7,3 +7,8 @@ function bouncer(arr) {
 }
 
 bouncer([7, "ate", "", false, 9]);
+
+// or
+function bouncer(arr) {
+  return arr.filter(Boolean);
+}
