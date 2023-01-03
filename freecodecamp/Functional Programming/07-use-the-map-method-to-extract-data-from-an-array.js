@@ -126,6 +126,13 @@ const ratings = watchList.map(({ Title: title, imdbRating: rating }) => ({
   rating,
 }));
 
+// OR
+/*
+const ratings = watchList.map((item) => ({
+  title: item["Title"],
+  rating: item["imdbRating"],
+}));
+*/
 // Only change code above this line
 
 console.log(JSON.stringify(ratings));
